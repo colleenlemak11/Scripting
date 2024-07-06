@@ -1,0 +1,22 @@
+#!/bin/bash
+# Name: Colleen
+# Date: 26 July 2023
+# Purpose: Fun with the boxes library
+# Installation: sudo apt-get install boxes
+
+echo "Howdy, what is your name?"
+read name
+echo -e "\nWelcome," $name", to the Drawing Module.\nWe will explore animations together!\n\n"
+sleep 3
+echo -e "First, we can enclose text inside of drawn boxes. Like this:\n"
+sleep 3
+echo -e "Here is a text box example!" | boxes
+sleep 3
+echo -e "\n\nNow, I would like you to meet my sidekick; a loyal trustworthy friend, Tux.\n"
+sleep 3
+echo -e "Don't be shy, it's my new friend" $name"."
+sleep 3
+echo -e "They aren't scary, go ahead and introduce yourself...\n"
+sleep 3
+echo -e "Hola, soy Tux el Penguino." | boxes -d tux
+sleep 4

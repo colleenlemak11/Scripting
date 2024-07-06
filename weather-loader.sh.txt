@@ -1,0 +1,13 @@
+#!/bin/bash
+# Name: Colleen
+# Date: 26 July 2023
+# Purpose: Program to load live weather report for inputted city
+
+echo -e "Welcome to the Weather Loader!\nEnter spaces using + operator.\n\nWhich city would you like a live weather report for? :)"
+read userCity
+sleep 0.5
+echo "Wow," $userCity "is arguably the best city in the world!"
+sleep 1.5
+echo "Let's check it out..."
+sleep 0.5
+curl wttr.in/$userCity
